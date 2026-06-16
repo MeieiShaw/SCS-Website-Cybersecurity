@@ -2,6 +2,8 @@
   const body = document.body;
   const studentButton = document.getElementById("studentMode");
   const printButton = document.getElementById("printPage");
+  const menuButton = document.getElementById("menuToggle");
+  const navPanel = document.getElementById("primaryNav");
   const expandButton = document.getElementById("expandAll");
   const collapseButton = document.getElementById("collapseAll");
   const searchInput = document.getElementById("resourceSearch");
@@ -11,6 +13,12 @@
   const resourceCards = resourceGrid ? Array.from(resourceGrid.querySelectorAll(".resource-card")) : [];
   let activeFilter = "all";
   let printOpenState = [];
+
+  function setMenuOpen(isOpen) {
+    if (!menuButton || !navPanel) return;
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    navPanel.classList.toggle("is-open", isOpen);
+  }
 
   function applyResourceFilters() {
     const query = (searchInput ? searchInput.value : "").trim().toLowerCase();
@@ -58,6 +66,16 @@
 
   if (printButton) {
     printButton.addEventListener("click", () => window.print());
+  }
+
+  if (menuButton && navPanel) {
+    menuButton.addEventListener("click", () => {
+      setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
+    });
+
+    navPanel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenuOpen(false));
+    });
   }
 
   if (expandButton) {

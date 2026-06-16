@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Y3-6 Cybersecurity 网络安全 Unit of Work</title>
+  <meta name="description" content="Level 3-6 Cybersecurity 网络安全 unit of work, redesigned as a teacher-friendly web resource.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-hero" id="top">
+    <nav class="topbar" aria-label="Unit navigation">
+      <a class="brand" href="#top" aria-label="Cybersecurity unit home">
+        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span>Y3-6 网络安全</span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#map">Learning Map</a>
+        <a href="#activities">Activities</a>
+        <a href="#resources">Resources</a>
+        <a href="#assessment">Assessment</a>
+      </div>
+      <div class="tools">
+        <button class="icon-button" type="button" id="studentMode" aria-pressed="false" title="学生视图">学生</button>
+        <button class="icon-button" type="button" id="printPage" title="打印页面">打印</button>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Level 3-6 Unit of Work</p>
+        <h1>Cybersecurity <span lang="zh-Hans">网络安全</span></h1>
+        <p class="hero-summary">
+          以话题讨论、情境判断和中文表达为主线，引导学生识别日常数字生活中的网络安全风险，并最终制作一条
+          <strong>3-5 分钟网络安全主题短片</strong>。
+        </p>
+        <div class="hero-tags" aria-label="Unit focus">
+          <span>中文讨论</span>
+          <span>eSafety</span>
+          <span>情境角色扮演</span>
+          <span>视频创作</span>
+        </div>
+      </div>
+      <div class="hero-board" aria-label="Unit quick snapshot">
+        <div class="signal-card signal-card--secure">
+          <span class="signal-label">Be Secure</span>
+          <strong>保护账号和信息</strong>
+          <p>密码、隐私、可疑链接</p>
+        </div>
+        <div class="signal-card signal-card--safe">
+          <span class="signal-label">Be Safe</span>
+          <strong>安全上网</strong>
+          <p>遇到不安全情况时求助</p>
+        </div>
+        <div class="signal-card signal-card--curious">
+          <span class="signal-label">Be Curious</span>
+          <strong>好奇但先思考</strong>
+          <p>判断信息真假与诱导</p>
+        </div>
+        <div class="signal-card signal-card--kind">
+          <span class="signal-label">Be Kind</span>
+          <strong>文明友善交流</strong>
+          <p>网络欺凌与同伴支持</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="band band--paper" id="overview">
+      <div class="section-inner">
+        <div class="section-kicker">Teacher Snapshot</div>
+        <div class="section-heading">
+          <h2>单元速览</h2>
+          <p>把原 DOCX 的密集表格重组为可扫描的教学工作台。</p>
+        </div>
+
+        <div class="snapshot-grid">
+          <details class="brief-card" open>
+            <summary>Learning Goal</summary>
+            <p>
+              学生围绕网络安全主题展开讨论，使用中文识别风险、表达安全选择，并通过短片制作深化理解。
+            </p>
+          </details>
+          <details class="brief-card" open>
+            <summary>Outcomes</summary>
+            <p>ML2-INT-01, ML2-UND-01, ML2-CRT-01, ML3-INT-01, ML3-UND-01, ML3-CRT-01</p>
+          </details>
+          <details class="brief-card" open>
+            <summary>Assessment</summary>
+            <p>eSafety poster/rule list, role-play conversation, short diary, or cybersecurity video project.</p>
+          </details>
+          <details class="brief-card" open>
+            <summary>Resources</summary>
+            <p>31 个外部资源链接：eSafety 页面、YouTube、Bilibili、Google Drive 电子书与故事书。</p>
+          </details>
+          <details class="brief-card" open>
+            <summary>Media Note</summary>
+            <p>源 DOCX 未包含内嵌图片文件；本页以视频缩略图、资源卡和后续图片区呈现视觉材料。</p>
+          </details>
+        </div>
+
+        <div class="goal-columns">
+          <article>
+            <h3>Students will be able to</h3>
+            <ul class="check-list">
+              <li>Identify common cyber security risks in everyday digital life using basic Chinese.</li>
+              <li>Ask and answer questions in Chinese about safe and unsafe online behaviours.</li>
+              <li>Compare online habits with others and discuss safe choices in an age-appropriate way.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Students with prior learning</h3>
+            <ul class="check-list">
+              <li>Use wider vocabulary and sentence structures to explain online safety rules.</li>
+              <li>Describe and justify safe online practices with sequencing and cause-effect language.</li>
+              <li>Write a short reflective text or scenario response in Chinese.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Additional language learners</h3>
+            <ul class="check-list">
+              <li>Use key vocabulary and sentence patterns to identify basic cyber safety ideas.</li>
+              <li>Respond to simple questions with sentence frames and visual support.</li>
+              <li>Participate in guided role-plays to practise safe online behaviours.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--mint" id="map">
+      <div class="section-inner">
+        <div class="section-kicker">Learning Map</div>
+        <div class="section-heading">
+          <h2>eSafety 四条学习路线</h2>
+          <p>基于 eSafety “Be an eSafe Kid”，把讨论问题转成课堂路径。</p>
+        </div>
+
+        <div class="route-grid">
+          <article class="route route--secure">
+            <span class="route-code">01</span>
+            <h3>Be Secure <span lang="zh-Hans">保护账号和信息</span></h3>
+            <ul>
+              <li>什么是密码？为什么不能告诉别人？</li>
+              <li>为什么不能用生日、1234 当密码？</li>
+              <li>为什么要先想一想再点链接？</li>
+            </ul>
+          </article>
+          <article class="route route--safe">
+            <span class="route-code">02</span>
+            <h3>Be Safe <span lang="zh-Hans">安全上网</span></h3>
+            <ul>
+              <li>什么情况会让你觉得“不安全”？</li>
+              <li>如果你觉得怪怪的，可以怎么做？</li>
+              <li>在网上，可以做哪些事情来保护自己？</li>
+            </ul>
+          </article>
+          <article class="route route--curious">
+            <span class="route-code">03</span>
+            <h3>Be Curious <span lang="zh-Hans">好奇心 + 思考</span></h3>
+            <ul>
+              <li>网上看到的东西一定是真的吗？</li>
+              <li>奇怪的消息或奖励是真的吗？</li>
+              <li>看到流行行为时，可以不思考就跟着做吗？</li>
+            </ul>
+          </article>
+          <article class="route route--kind">
+            <span class="route-code">04</span>
+            <h3>Be Kind <span lang="zh-Hans">文明友善交流</span></h3>
+            <ul>
+              <li>什么是友善的话？</li>
+              <li>网上可以骂人吗？为什么？</li>
+              <li>看到别人被欺负可以怎么做？</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--paper" id="language">
+      <div class="section-inner">
+        <div class="section-kicker">Language Focus</div>
+        <div class="section-heading">
+          <h2>词汇与句型</h2>
+          <p>把词汇从长表格拆成可投屏、可复习的双语词汇组。</p>
+        </div>
+
+        <div class="vocab-grid">
+          <article class="vocab-group">
+            <h3>上网与设备</h3>
+            <p>网络、上网、手机、平板、电脑、游戏、视频、信息、病毒</p>
+          </article>
+          <article class="vocab-group">
+            <h3>网络上的人</h3>
+            <p>朋友、同学、老师、家人、陌生人</p>
+          </article>
+          <article class="vocab-group">
+            <h3>个人信息</h3>
+            <p>名字、年龄、学校、地址、电话、邮箱、照片、密码、隐私</p>
+          </article>
+          <article class="vocab-group">
+            <h3>网络行为</h3>
+            <p>告诉、分享、点击、相信、保护、问</p>
+          </article>
+          <article class="vocab-group">
+            <h3>安全判断</h3>
+            <p>小心、危险、安全</p>
+          </article>
+        </div>
+
+        <div class="sentence-frames">
+          <h3>Sentence Patterns</h3>
+          <div class="frame-list">
+            <p><strong>可以……</strong><span>上网时遇到不确定的信息，可以问老师。</span></p>
+            <p><strong>不可以……</strong><span>不可以分享密码。</span></p>
+            <p><strong>应该……</strong><span>上网时应该保护隐私。</span></p>
+            <p><strong>不应该……</strong><span>不应该相信陌生人。</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--ink" id="activities">
+      <div class="section-inner">
+        <div class="section-kicker">Teaching Sequence</div>
+        <div class="section-heading">
+          <h2>课堂活动序列</h2>
+          <p>每个活动围绕“判断安全性、说出理由、用中文回应”推进。</p>
+        </div>
+
+        <div class="activity-tools teacher-only">
+          <button type="button" class="tool-button" id="expandAll">展开全部</button>
+          <button type="button" class="tool-button" id="collapseAll">收起全部</button>
+        </div>
+
+        <div class="activity-list">
+          <details class="activity" open>
+            <summary>
+              <span class="activity-step">01</span>
+              <span>
+                <strong>Lead-in: 可以 / 不可以</strong>
+                <small>Circle and cross gesture check</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <p>
+                学生用双臂做出 “⭕” 表示 可以 / 安全，做出 “X” 表示 不可以 / 危险。教师读出
+                分享密码、问老师、点击信息、告诉陌生人名字 等行为，学生即时判断并说明原因。
+              </p>
+              <dl>
+                <dt>Key Chinese</dt>
+                <dd>可以、不可以、安全、危险、问老师、保护隐私</dd>
+                <dt>Evidence of learning</dt>
+                <dd>学生能用动作和简单句说明一个行为是否安全。</dd>
+              </dl>
+            </div>
+          </details>
+
+          <details class="activity">
+            <summary>
+              <span class="activity-step">02</span>
+              <span>
+                <strong>Vocabulary Building</strong>
+                <small>Sentence-making, matching, and scenario language</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <p>
+                使用词汇卡进行中英配对、造句和快速复习。学生把“密码、陌生人、点击、分享、隐私”等词放入句型，
+                形成可在情境讨论中使用的中文表达。
+              </p>
+              <dl>
+                <dt>Student task</dt>
+                <dd>用一个关键词和一个句型造句，例如“不可以分享密码”。</dd>
+                <dt>Support</dt>
+                <dd>提供句框、图示和同伴示范。</dd>
+              </dl>
+            </div>
+          </details>
+
+          <details class="activity">
+            <summary>
+              <span class="activity-step">03</span>
+              <span>
+                <strong>Mini Scenarios</strong>
+                <small>Small group cyber safety decisions</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <p>
+                小组抽取情境卡，例如 “Someone asks for your name” 或 “Receiving a link from a stranger”。
+                学生讨论后使用所学词汇和句型表达会怎么做，再向全班分享。
+              </p>
+              <div class="scenario-grid">
+                <article>
+                  <h4>A stranger sends a link</h4>
+                  <p>我不应该点击。我可以问老师。</p>
+                </article>
+                <article>
+                  <h4>A friend asks for your password</h4>
+                  <p>不可以分享密码。密码是隐私。</p>
+                </article>
+                <article>
+                  <h4>Someone is rude in a game</h4>
+                  <p>我应该告诉老师或家人。</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="activity">
+            <summary>
+              <span class="activity-step">04</span>
+              <span>
+                <strong>Listening & Speaking</strong>
+                <small>Password, personal information, trust, and help-seeking</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <div class="prompt-columns">
+                <div>
+                  <h4>Password Protection</h4>
+                  <p>Would you share your password with anyone other than your family? Why or why not?</p>
+                </div>
+                <div>
+                  <h4>Personal Information</h4>
+                  <p>What information should you never share online: address, school, phone number?</p>
+                </div>
+                <div>
+                  <h4>Online Trust</h4>
+                  <p>Can you trust new friends you meet online? Why or why not?</p>
+                </div>
+                <div>
+                  <h4>If Problems Happen</h4>
+                  <p>If you encounter something unsafe online, who would you ask for help?</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="activity">
+            <summary>
+              <span class="activity-step">05</span>
+              <span>
+                <strong>Writing Practice</strong>
+                <small>2-4 Chinese sentences from a cyber safety situation</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <p>
+                给学生一个简短情境，请他们写 2-4 句中文说明会怎么做。可选情境包括收到陌生人链接、游戏中有人说难听的话、
+                朋友询问密码等。
+              </p>
+              <p class="example-line">Example: 我不可以点击陌生人的链接。我应该问老师。这样比较安全。</p>
+            </div>
+          </details>
+
+          <details class="activity">
+            <summary>
+              <span class="activity-step">06</span>
+              <span>
+                <strong>Group Project</strong>
+                <small>Create a 3-5 minute cybersecurity video</small>
+              </span>
+            </summary>
+            <div class="activity-body">
+              <p>
+                学生小组制作网络安全主题短片，展示一个常见风险、中文安全建议和求助方式。作品可采用情境剧、采访、
+                规则说明或故事书改编。
+              </p>
+              <dl>
+                <dt>Success markers</dt>
+                <dd>清楚呈现风险、使用目标词汇、给出安全选择、表达可信求助对象。</dd>
+              </dl>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--paper" id="culture">
+      <div class="section-inner narrow">
+        <div class="section-kicker">Cultural Component</div>
+        <div class="section-heading">
+          <h2>跨文化比较</h2>
+          <p>比较中国和澳大利亚常用 App、网络规则、网络用语和缩写，讨论不同数字文化中的安全选择。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--resource" id="resources">
+      <div class="section-inner">
+        <div class="section-kicker">Resource Library</div>
+        <div class="section-heading">
+          <h2>资源库</h2>
+          <p>源文档中的外链已按语言、平台和资源类型重新整理。外部网站可能需要联网、登录或教师课前审核。</p>
+        </div>
+
+        <div class="resource-controls teacher-only" aria-label="Resource filters">
+          <label class="search-box">
+            <span>搜索资源</span>
+            <input id="resourceSearch" type="search" placeholder="例如：隐私、Bilibili、故事书">
+          </label>
+          <div class="filter-group" role="group" aria-label="Filter resources">
+            <button class="filter-chip is-active" type="button" data-filter="all">全部</button>
+            <button class="filter-chip" type="button" data-filter="Cantonese">粤语</button>
+            <button class="filter-chip" type="button" data-filter="Mandarin">普通话</button>
+            <button class="filter-chip" type="button" data-filter="Bilingual">双语通用</button>
+            <button class="filter-chip" type="button" data-filter="YouTube">YouTube</button>
+            <button class="filter-chip" type="button" data-filter="Bilibili">Bilibili</button>
+            <button class="filter-chip" type="button" data-filter="Book">电子书</button>
+          </div>
+          <p class="resource-count"><span id="resourceCount">31</span> resources shown</p>
+        </div>
+
+        <div class="resource-grid" id="resourceGrid">
+          <article class="resource-card" data-tags="Web English eSafety Official" data-platform="eSafety">
+            <div class="resource-visual resource-visual--esafety"><span>eSafety</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">Website · Official</span>
+              <h3>Be an eSafe kid</h3>
+              <p>官方儿童网络安全入口，可支撑 Be Safe / Be Curious / Be Kind / Be Secure 四条学习路线。</p>
+              <a href="https://www.esafety.gov.au/kids/be-an-esafe-kid" target="_blank" rel="noopener">打开 eSafety</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Book" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/eTzRjbGXSaA/hqdefault.jpg" alt="故事书《AI機械人大對決》视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>故事书《AI機械人大對決》</h3>
+              <p>可用于 AI、判断信息与安全选择讨论。</p>
+              <a href="https://www.youtube.com/watch?v=eTzRjbGXSaA&list=PLkQYWtFAxg30lzh4jxXr7pokF6-bzlW8j" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Book" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/ORaNI0R6J9E/hqdefault.jpg" alt="故事书《甜甜圈的秘密》视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>故事书《甜甜圈的秘密》</h3>
+              <p>适合引入个人信息、奖励诱导和线上判断。</p>
+              <a href="https://www.youtube.com/watch?v=ORaNI0R6J9E&list=PLkQYWtFAxg30lzh4jxXr7pokF6-bzlW8j&index=2" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Book" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/NW3e4f7_mkQ/hqdefault.jpg" alt="故事书《社交陷阱1+1》视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>故事书《社交陷阱1+1》</h3>
+              <p>适合讨论网络朋友、陌生人和社交陷阱。</p>
+              <a href="https://www.youtube.com/watch?v=NW3e4f7_mkQ&list=PLkQYWtFAxg30lzh4jxXr7pokF6-bzlW8j&index=3" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Playlist Video Digital Literacy" data-platform="YouTube">
+            <div class="resource-visual resource-visual--youtube"><span>Playlist</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube playlist</span>
+              <h3>《数码素养系列》（广东话）</h3>
+              <p>共七条短片，可作为分组观看与讨论资源。</p>
+              <a href="https://youtube.com/playlist?list=PLkQYWtFAxg31rLsbd2rf5UbXpDq9zyVAL&si=ftOZ4GBbi_3a8uVs" target="_blank" rel="noopener">打开播放列表</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Playlist Video Media Literacy" data-platform="YouTube">
+            <div class="resource-visual resource-visual--youtube"><span>Playlist</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube playlist</span>
+              <h3>《新媒體素養提升計劃》</h3>
+              <p>共六条短片，适合媒体素养、信息辨识与网络行为讨论。</p>
+              <a href="https://youtube.com/playlist?list=PLIIDSEAIjeE-XXpoaQGj2v5Rig7jsUUz8&si=XfpaCUfNCL8yFmQA" target="_blank" rel="noopener">打开播放列表</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Cybersecurity" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/QxGNO4ziZnE/hqdefault.jpg" alt="青少年科普影片製作比賽網絡安全视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>青少年科普影片製作比賽：網絡安全</h3>
+              <p>可作为学生短片项目的参考作品。</p>
+              <a href="https://www.youtube.com/watch?v=QxGNO4ziZnE" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Cyberbullying" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/G2ZAeNf8rYU/hqdefault.jpg" alt="秘笈09 網絡欺凌零容忍视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>秘笈09 網絡欺凌零容忍</h3>
+              <p>适合 Be Kind 与网络欺凌讨论。</p>
+              <a href="https://www.youtube.com/watch?v=G2ZAeNf8rYU" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Video Creative" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/vhvwyPLtIBE/hqdefault.jpg" alt="智慧網樂遊短片創作比賽小学组冠军视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube</span>
+              <h3>「智慧網樂遊」小學組冠軍</h3>
+              <p>适合分析学生作品结构、口号和镜头表达。</p>
+              <a href="https://www.youtube.com/watch?v=vhvwyPLtIBE" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Cantonese YouTube Playlist Video Wellbeing" data-platform="YouTube">
+            <div class="resource-visual resource-visual--youtube"><span>Playlist</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">粤语 · YouTube playlist</span>
+              <h3>健康地使用互聯網及電子屏幕產品</h3>
+              <p>支持屏幕时间、健康习惯和数字 wellbeing 讨论。</p>
+              <a href="https://youtube.com/playlist?list=PLy8zN7Ql_1rYH0eAhn7LzfCbzRLZAhka6&si=HcLU-OE7fuYN1kCc" target="_blank" rel="noopener">打开播放列表</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Literacy" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>小学生第1课：互联网伴我成长</h3>
+              <p>适合单元导入，讨论互联网的用途与规则。</p>
+              <a href="https://www.bilibili.com/video/BV1P34y1x7oV/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Harmful Information" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>小学生第2课：防范网络有害信息</h3>
+              <p>适合 Be Curious 与信息辨识讨论。</p>
+              <a href="https://www.bilibili.com/video/BV1Ca411i7DU/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Screen Time" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>小学生第3课：上网不可太沉迷</h3>
+              <p>适合健康使用互联网和电子屏幕产品讨论。</p>
+              <a href="https://www.bilibili.com/video/BV1PY4y1p7df/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Privacy" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>小学生第4课：上网要把隐私护</h3>
+              <p>适合个人信息、密码和隐私保护活动。</p>
+              <a href="https://www.bilibili.com/video/BV1oS4y117oD/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Cybersecurity" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>网络安全“趣”科普</h3>
+              <p>可用于补充网络安全概念与案例。</p>
+              <a href="https://www.bilibili.com/video/BV1JM4y1b7Wm/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Lesson" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>小学生网络安全教育微课视频</h3>
+              <p>适合教师筛选片段投屏讲解。</p>
+              <a href="https://www.bilibili.com/video/BV11t4y1H7kB/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Lesson" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>网络安全教育1</h3>
+              <p>可作为普通话视频资源候选。</p>
+              <a href="https://www.bilibili.com/video/BV1aX4y1h7Yw/?spm_id_from=333.337.search-card.all.click&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Lesson" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>网络安全教育2</h3>
+              <p>可作为普通话视频资源候选。</p>
+              <a href="https://www.bilibili.com/video/BV1is4y1T7nd?spm_id_from=333.788.videopod.sections&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin Bilibili Video Lesson" data-platform="Bilibili">
+            <div class="resource-visual resource-visual--bilibili"><span>Bilibili</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · Bilibili</span>
+              <h3>网络安全教育3</h3>
+              <p>可作为普通话视频资源候选。</p>
+              <a href="https://www.bilibili.com/video/BV1ds4y1q7Am?spm_id_from=333.788.videopod.sections&vd_source=02111f18dd603bd40a7d54ca203d2f09" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Playlist Video Digital Literacy" data-platform="YouTube">
+            <div class="resource-visual resource-visual--youtube"><span>Playlist</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube playlist</span>
+              <h3>《数码素养系列》（普通话）</h3>
+              <p>共七条短片，可用于普通话分组资源站。</p>
+              <a href="https://youtube.com/playlist?list=PLkQYWtFAxg3306G3qxWgIt1ihuXUQkrPB&si=_Uqb-xoHZFrmsaJ-" target="_blank" rel="noopener">打开播放列表</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Playlist Video Information Security Ethics" data-platform="YouTube">
+            <div class="resource-visual resource-visual--youtube"><span>Playlist</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube playlist</span>
+              <h3>《資訊安全與倫理》</h3>
+              <p>共 22 条短片，适合教师筛选延伸片段。</p>
+              <a href="https://youtube.com/playlist?list=PLShUzCCmJhxL7lVsmOTygSenGw9yezJcM&si=xL9DN5x-QEenhg-j" target="_blank" rel="noopener">打开播放列表</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Video Scam" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/TeqxNzExsw8/hqdefault.jpg" alt="2024反詐騙素養宣導網路交友詐騙视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube</span>
+              <h3>網路交友詐騙</h3>
+              <p>适合讨论网络朋友、信任和求助。</p>
+              <a href="https://www.youtube.com/watch?v=TeqxNzExsw8" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Video Scam Game" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/GKjzGT8TFFM/hqdefault.jpg" alt="2024反詐騙素養宣導線上遊戲詐騙视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube</span>
+              <h3>線上遊戲詐騙</h3>
+              <p>适合游戏账号、陌生人和奖励诱导情境。</p>
+              <a href="https://www.youtube.com/watch?v=GKjzGT8TFFM" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Video Rumour" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/7Z--MyKOFoA/hqdefault.jpg" alt="辨識網路謠言视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube</span>
+              <h3>辨識網路謠言 [7-12歲]</h3>
+              <p>适合 Be Curious 与信息真假判断。</p>
+              <a href="https://www.youtube.com/watch?v=7Z--MyKOFoA" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Mandarin YouTube Video Privacy" data-platform="YouTube">
+            <img src="https://i.ytimg.com/vi/iiSRaVC7i5Q/hqdefault.jpg" alt="三資小豬视频缩略图" loading="lazy">
+            <div class="resource-content">
+              <span class="resource-meta">普通话 · YouTube</span>
+              <h3>三資小豬</h3>
+              <p>适合个人资料、账号资料和隐私资料讨论。</p>
+              <a href="https://www.youtube.com/watch?v=iiSRaVC7i5Q" target="_blank" rel="noopener">打开视频</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Story" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>Book</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>故事书｜AI机器人大对决</h3>
+              <p>故事书资源，适合阅读、改编和短片项目参考。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Story" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>Book</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>故事书｜甜甜圈的秘密</h3>
+              <p>故事书资源，适合奖励诱导和安全判断讨论。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Story" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>Book</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>故事书｜社交陷阱1+1</h3>
+              <p>故事书资源，适合网络交友和社交陷阱讨论。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Ebook" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>eBook</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>电子书｜《智 Smart 新世代》（小學篇）</h3>
+              <p>电子书资源，适合教师筛选页面作为阅读材料。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Ebook" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>eBook</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>电子书｜《点点与你畅游网络世界》</h3>
+              <p>电子书资源，适合安全上网和规则讨论。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-tags="Bilingual Google Drive Book Ebook" data-platform="Google Drive">
+            <div class="resource-visual resource-visual--drive"><span>eBook</span></div>
+            <div class="resource-content">
+              <span class="resource-meta">双语通用 · Google Drive</span>
+              <h3>电子书｜《魔法毛与魔法喵：守护网络安全的勇者》</h3>
+              <p>电子书资源，适合故事改编和学生短片脚本。</p>
+              <a href="https://drive.google.com/drive/folders/1wp4E8J8GbNBYNky2-uE0cdr7-u4nEzSn" target="_blank" rel="noopener">打开文件夹</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--mint" id="visuals">
+      <div class="section-inner">
+        <div class="section-kicker">Visual Resources</div>
+        <div class="section-heading">
+          <h2>图片与媒体呈现</h2>
+          <p>源 DOCX 没有内嵌图片。本页保留后续图片区，并用视频缩略图承担当前视觉预览。</p>
+        </div>
+        <div class="media-note">
+          <div>
+            <strong>DOCX media extraction</strong>
+            <p>检查 `word/media` 与绘图对象后，未发现内嵌图片或视频文件。教师可把后续课堂截图、学生作品或安全海报加入此区。</p>
+          </div>
+          <div>
+            <strong>Suggested alt text pattern</strong>
+            <p>“学生判断陌生链接是否安全的课堂示例，用于支持 Be Curious 活动。”</p>
+          </div>
+          <div>
+            <strong>Video display</strong>
+            <p>YouTube 视频以缩略图 + 外链方式展示；Bilibili 与 Drive 资源以平台卡片展示，避免本地打开时嵌入失败。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--paper" id="assessment">
+      <div class="section-inner">
+        <div class="section-kicker">Differentiated Assessment</div>
+        <div class="section-heading">
+          <h2>评估任务</h2>
+          <p>学生可以通过视觉作品、口语互动、写作或短片展示网络安全理解。</p>
+        </div>
+
+        <div class="assessment-grid">
+          <article class="assessment-card">
+            <span class="assessment-code">Option 1</span>
+            <h3>eSafety Poster or Rule List</h3>
+            <p>制作中文网络安全海报或规则清单，并向全班展示。</p>
+          </article>
+          <article class="assessment-card">
+            <span class="assessment-code">Option 2</span>
+            <h3>Role-play Conversation</h3>
+            <p>围绕网络安全情境进行中文对话表演。</p>
+          </article>
+          <article class="assessment-card">
+            <span class="assessment-code">Option 3</span>
+            <h3>Short Diary</h3>
+            <p>用中文写一篇关于正确使用科技的一天的小日记。</p>
+          </article>
+          <article class="assessment-card assessment-card--feature">
+            <span class="assessment-code">Project</span>
+            <h3>Cybersecurity Video</h3>
+            <p>小组制作 3-5 分钟短片，包含风险情境、中文安全建议和求助方式。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--paper" id="evaluation">
+      <div class="section-inner">
+        <div class="section-kicker">Evaluation</div>
+        <div class="section-heading">
+          <h2>单元评价表</h2>
+          <p>保留源文档的评价维度，方便教师课后反思和调整。</p>
+        </div>
+
+        <div class="rubric-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Rating</th>
+                <th>Explanation of rating</th>
+                <th>Suggested action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Represents a logical sequence of learning that meets syllabus requirements</td><td></td><td></td><td></td></tr>
+              <tr><td>Explicitly addresses all outcomes for the stage</td><td></td><td></td><td></td></tr>
+              <tr><td>Identifies assessment tasks and when they occur in the sequence of learning</td><td></td><td></td><td></td></tr>
+              <tr><td>Reflects the needs, interests and abilities of all students</td><td></td><td></td><td></td></tr>
+              <tr><td>Identifies the key concepts and skills as well as the content focus of each unit of work</td><td></td><td></td><td></td></tr>
+              <tr><td>Reflects the recursive nature of learning, providing opportunities to revisit outcomes over the stage</td><td></td><td></td><td></td></tr>
+              <tr><td>Allows for and works around school-based events</td><td></td><td></td><td></td></tr>
+              <tr><td>Builds in flexibility to ensure equitable access to resources</td><td></td><td></td><td></td></tr>
+              <tr><td>Coordinates with scope and sequences for other key learning areas</td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built from the DOCX source: <strong>Y3-6 网络安全 Unit of Work.docx</strong></p>
+    <p>External resources remain on their original platforms and should be reviewed before classroom use.</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

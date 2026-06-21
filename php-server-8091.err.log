@@ -1,0 +1,67 @@
+[Sun Jun 21 20:41:58 2026] PHP 8.0.30 Development Server (http://127.0.0.1:8091) started
+[Sun Jun 21 20:42:18 2026] 127.0.0.1:65533 Accepted
+[Sun Jun 21 20:42:18 2026] 127.0.0.1:65533 [200]: GET /
+[Sun Jun 21 20:42:18 2026] 127.0.0.1:65533 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63154 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63154 [200]: GET /
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63109 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63154 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63109 [200]: GET /assets/styles.css
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:56102 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:59507 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:56102 [200]: GET /assets/scripts/public.js
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:62311 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:59507 [200]: GET /assets/images/scs_logo.jpg
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:63109 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:62311 [200]: GET /assets/images/SchoolTour202507b.gif
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:56102 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:59507 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:53056 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:64979 Accepted
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:53056 [200]: GET /assets/data/unit-content.js
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:64979 [200]: GET /assets/scripts/shared.js
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:53056 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:64979 Closing
+[Sun Jun 21 20:43:58 2026] 127.0.0.1:62311 Closing
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:56513 Accepted
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:54709 Accepted
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:52488 Accepted
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:56513 [200]: GET /assets/fonts/Play-bold.ttf
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:54709 [200]: GET /assets/fonts/REM-regular.ttf
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:52488 [200]: GET /assets/fonts/REM-bold.ttf
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:56513 Closing
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:54709 Closing
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:52488 Closing
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:63489 Accepted
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:63489 [404]: GET /favicon.ico - No such file or directory
+[Sun Jun 21 20:44:04 2026] 127.0.0.1:63489 Closing
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50217 Accepted
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50217 [200]: GET /assets/scripts/teacher.js
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50217 Closing
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50218 Accepted
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50218 [200]: GET /teacher.html
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50218 Closing
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50219 Accepted
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50219 [200]: GET /assets/scripts/public.js
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50219 Closing
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50221 Accepted
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50221 [200]: GET /assets/data/docx-tables.js
+[Sun Jun 21 20:44:42 2026] 127.0.0.1:50221 Closing
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50232 Accepted
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50232 [200]: GET /
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50232 Closing
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50233 Accepted
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50233 [200]: GET /teacher.html
+[Sun Jun 21 20:45:19 2026] 127.0.0.1:50233 Closing
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57528 Accepted
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57528 [200]: GET /
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57528 Closing
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57530 Accepted
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57530 [200]: GET /teacher.html
+[Sun Jun 21 20:48:42 2026] 127.0.0.1:57530 Closing
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57540 Accepted
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57540 [200]: GET /
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57540 Closing
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57541 Accepted
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57541 [200]: GET /teacher.html
+[Sun Jun 21 20:48:54 2026] 127.0.0.1:57541 Closing

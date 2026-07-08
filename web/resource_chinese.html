@@ -55,13 +55,13 @@
             <input id="resourceSearch" type="search" placeholder="例如：隐私、Bilibili、故事书">
           </label>
           <div class="filter-group" role="group" aria-label="筛选资源">
-            <button class="filter-chip is-active" type="button" data-filter="all">全部</button>
-            <button class="filter-chip" type="button" data-filter="Cantonese">粤语</button>
-            <button class="filter-chip" type="button" data-filter="Mandarin">普通话</button>
-            <button class="filter-chip" type="button" data-filter="Bilingual">双语通用</button>
-            <button class="filter-chip" type="button" data-filter="YouTube">YouTube</button>
-            <button class="filter-chip" type="button" data-filter="Bilibili">Bilibili</button>
-            <button class="filter-chip" type="button" data-filter="Book">电子书</button>
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-chip" type="button" data-filter="Cantonese" aria-pressed="false">粤语</button>
+            <button class="filter-chip" type="button" data-filter="Mandarin" aria-pressed="false">普通话</button>
+            <button class="filter-chip" type="button" data-filter="Bilingual" aria-pressed="false">双语通用</button>
+            <button class="filter-chip" type="button" data-filter="YouTube" aria-pressed="false">YouTube</button>
+            <button class="filter-chip" type="button" data-filter="Bilibili" aria-pressed="false">Bilibili</button>
+            <button class="filter-chip" type="button" data-filter="Ebook" aria-pressed="false">电子书</button>
           </div>
           <p class="resource-count">显示 <span id="resourceCount">31</span> 个资源</p>
         </div>
@@ -399,6 +399,13 @@
     </div>
   </footer>
 
-  <script type="module" src="assets/scripts/teacher.js"></script>
+  <a class="back-to-top" href="#" role="button" aria-label="回到顶部" title="回到顶部">
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+    <span class="sr-only">回到顶部</span>
+  </a>
+
+  <script src="assets/data/docx-tables.js"></script>
+  <script src="assets/scripts/shared.js"></script>
+  <script src="assets/scripts/teacher.js"></script>
 </body>
 </html>

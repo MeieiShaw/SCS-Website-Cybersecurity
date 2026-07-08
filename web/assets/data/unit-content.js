@@ -1,4 +1,4 @@
-export const learningRoutes = [
+window.learningRoutes = [
   {
     code: "01",
     tone: "secure",
@@ -45,7 +45,7 @@ export const learningRoutes = [
   }
 ];
 
-export const publicScenarios = [
+window.publicScenarios = [
   {
     title: "陌生人发来链接",
     situation: "有人说点开链接就能拿到游戏奖励。",
@@ -63,7 +63,7 @@ export const publicScenarios = [
   }
 ];
 
-export const quizQuestions = [
+window.quizQuestions = [
   {
     prompt: "收到陌生人发来的中奖链接，你应该怎么做？",
     choices: [

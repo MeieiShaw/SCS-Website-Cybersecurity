@@ -1,4 +1,4 @@
-﻿export const docxTables = [
+window.docxTables = [
     {
         "title":  "DOCX Table 1",
         "rows":  [

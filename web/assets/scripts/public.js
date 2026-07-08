@@ -1,5 +1,8 @@
-import { learningRoutes, publicScenarios, quizQuestions } from "../data/unit-content.js";
-import { createElement, setupBackToTop, setupMenu, setupPrint } from "./shared.js";
+(function () {
+const { createElement, setupBackToTop, setupMenu, setupPrint } = window.scsShared;
+const learningRoutes = window.learningRoutes || [];
+const publicScenarios = window.publicScenarios || [];
+const quizQuestions = window.quizQuestions || [];
 
 const LANGUAGE_STORAGE_KEY = "scs-public-language";
 const DEFAULT_LANGUAGE = "zh";
@@ -81,6 +84,7 @@ const uiText = {
     footerTeacher: "教师版",
     footerSource: "基于 Y3-6 网络安全 Unit of Work 来源整理。",
     footerReview: "外部资源用于课堂前，请由教师先行审核。",
+    backToTop: "回到顶部",
     quizQuestionStatus: (current, total) => `第 ${current} / ${total} 题`,
     quizScoreStatus: (score, total) => `得分 ${score} / ${total}`,
     quizWrongPrefix: "再想一想。"
@@ -161,6 +165,7 @@ const uiText = {
     footerTeacher: "Teacher",
     footerSource: "Built from the Y3-6 Cybersecurity Unit of Work source.",
     footerReview: "External resources should be reviewed by teachers before classroom use.",
+    backToTop: "Back to top",
     quizQuestionStatus: (current, total) => `Question ${current} of ${total}`,
     quizScoreStatus: (score, total) => `Score ${score} of ${total}`,
     quizWrongPrefix: "Try again. "
@@ -532,3 +537,4 @@ function renderQuestion() {
     options.appendChild(button);
   });
 }
+})();

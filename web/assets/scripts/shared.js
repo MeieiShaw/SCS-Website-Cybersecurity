@@ -1,4 +1,5 @@
-export function setupMenu() {
+(function () {
+function setupMenu() {
   const menuButton = document.getElementById("menuToggle");
   const navPanel = document.getElementById("primaryNav");
 
@@ -19,43 +20,101 @@ export function setupMenu() {
   });
 }
 
-export function setupPrint() {
+function setupPrint() {
   const printButton = document.getElementById("printPage");
   if (printButton) {
     printButton.addEventListener("click", () => window.print());
   }
 }
 
-export function setupBackToTop() {
+function setupBackToTop() {
   const isChinesePage = document.documentElement.lang.toLowerCase().startsWith("zh");
   const label = isChinesePage ? "回到顶部" : "Back to top";
-  const button = createElement("button", "back-to-top");
-  const icon = createElement("span", "material-symbols-outlined", "keyboard_arrow_up");
-  const text = createElement("span", "", label);
+  let buttons = Array.from(document.querySelectorAll(".back-to-top"));
 
-  icon.setAttribute("aria-hidden", "true");
-  button.type = "button";
-  button.setAttribute("aria-label", label);
-  button.setAttribute("title", label);
-  button.append(icon, text);
-  document.body.appendChild(button);
+  if (!buttons.length) {
+    const button = createElement("a", "back-to-top");
+    const icon = createElement("span", "material-symbols-outlined", "arrow_upward");
+    const text = createElement("span", "sr-only", label);
 
-  const toggleButton = () => {
-    button.classList.toggle("is-visible", window.scrollY > 420);
-  };
+    icon.setAttribute("aria-hidden", "true");
+    button.href = "#";
+    button.setAttribute("role", "button");
+    button.append(icon, text);
+    document.body.appendChild(button);
+    buttons = [button];
+  }
 
-  button.addEventListener("click", () => {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+  buttons.forEach((button) => {
+    if (button.dataset.backToTopReady === "true") return;
+
+    if (button instanceof HTMLButtonElement) {
+      button.type = "button";
+    } else if (button instanceof HTMLAnchorElement && !button.getAttribute("href")) {
+      button.href = "#";
+    }
+
+    button.setAttribute("aria-label", button.getAttribute("aria-label") || label);
+    button.setAttribute("title", button.getAttribute("title") || label);
+    button.dataset.backToTopReady = "true";
+
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      scrollPageToTop(prefersReducedMotion);
+    });
   });
-
-  window.addEventListener("scroll", toggleButton, { passive: true });
-  toggleButton();
 }
 
-export function createElement(tagName, className, text) {
+function scrollPageToTop(prefersReducedMotion) {
+  const behavior = prefersReducedMotion ? "auto" : "smooth";
+  const scrollRoots = [
+    document.scrollingElement,
+    document.documentElement,
+    document.body
+  ].filter(Boolean);
+
+  try {
+    window.scrollTo({ top: 0, left: 0, behavior });
+  } catch (error) {
+    window.scrollTo(0, 0);
+  }
+
+  scrollRoots.forEach((root) => {
+    if (typeof root.scrollTo === "function") {
+      try {
+        root.scrollTo({ top: 0, left: 0, behavior });
+      } catch (error) {
+        root.scrollTop = 0;
+        root.scrollLeft = 0;
+      }
+    } else {
+      root.scrollTop = 0;
+      root.scrollLeft = 0;
+    }
+  });
+
+  if (prefersReducedMotion) return;
+
+  window.requestAnimationFrame(() => {
+    scrollRoots.forEach((root) => {
+      root.scrollTop = 0;
+      root.scrollLeft = 0;
+    });
+  });
+}
+
+function createElement(tagName, className, text) {
   const element = document.createElement(tagName);
   if (className) element.className = className;
   if (text) element.textContent = text;
   return element;
 }
+
+window.scsShared = {
+  createElement,
+  setupBackToTop,
+  setupMenu,
+  setupPrint
+};
+})();

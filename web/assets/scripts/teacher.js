@@ -1,5 +1,6 @@
-import { docxTables } from "../data/docx-tables.js";
-import { createElement, setupBackToTop, setupMenu, setupPrint } from "./shared.js";
+(function () {
+const { createElement, setupBackToTop, setupMenu, setupPrint } = window.scsShared;
+const docxTables = window.docxTables || [];
 
 const body = document.body;
 const studentButton = document.getElementById("studentMode");
@@ -253,10 +254,14 @@ function setupStudentMode() {
 }
 
 function setupResourceFilters() {
+  const activeButton = filterButtons.find((button) => button.classList.contains("is-active"));
+  activeFilter = activeButton?.dataset.filter || activeFilter;
+  updateFilterButtons();
+
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       activeFilter = button.dataset.filter || "all";
-      filterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      updateFilterButtons();
       applyResourceFilters();
     });
   });
@@ -266,6 +271,14 @@ function setupResourceFilters() {
   }
 
   applyResourceFilters();
+}
+
+function updateFilterButtons() {
+  filterButtons.forEach((button) => {
+    const isActive = (button.dataset.filter || "all") === activeFilter;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
 }
 
 function applyResourceFilters() {
@@ -280,7 +293,7 @@ function applyResourceFilters() {
     ].join(" ").toLowerCase();
 
     const matchesQuery = !query || haystack.includes(query);
-    const matchesFilter = activeFilter === "all" || haystack.includes(activeFilter.toLowerCase());
+    const matchesFilter = activeFilter === "all" || getResourceTokens(card).includes(activeFilter.toLowerCase());
     const isVisible = matchesQuery && matchesFilter;
 
     card.classList.toggle("is-hidden", !isVisible);
@@ -290,6 +303,13 @@ function applyResourceFilters() {
   if (resourceCount) {
     resourceCount.textContent = String(visibleCount);
   }
+}
+
+function getResourceTokens(card) {
+  return [
+    card.dataset.tags || "",
+    card.dataset.platform || ""
+  ].join(" ").toLowerCase().split(/\s+/).filter(Boolean);
 }
 
 function setupActivityControls() {
@@ -516,3 +536,4 @@ function appendCellText(cell, text) {
     cell.appendChild(paragraph);
   });
 }
+})();

@@ -16,7 +16,7 @@
       <a class="brand" href="#top" aria-label="网络安全单元首页">
         <img class="brand-logo" src="assets/images/scs_logo.jpg" alt="悉尼中文学校校徽">
         <span class="brand-text">
-          <strong>悉尼中文学校</strong>
+          <strong>雪梨中文学校</strong>
           <small>三至六年级网络安全教师版</small>
         </span>
       </a>
@@ -28,21 +28,20 @@
           <a href="#teaching-tips">教学提示</a>
           <a href="#activities">课堂活动</a>
           <a href="resource_chinese.html">资源库</a>
-          <a href="#original-docx">来源表格</a>
         </div>
         <div class="tools">
           <a class="icon-button" href="cs_project_chinese.html" title="打开公开版">
             <span class="material-symbols-outlined" aria-hidden="true">public</span>
             <span>公开版</span>
           </a>
-          <button class="icon-button" type="button" id="studentMode" aria-pressed="false" title="学生视图">
+          <!-- <button class="icon-button" type="button" id="studentMode" aria-pressed="false" title="学生视图">
             <span class="material-symbols-outlined" aria-hidden="true">school</span>
             <span>精简</span>
-          </button>
-          <button class="icon-button" type="button" id="printPage" title="打印页面">
+          </button> -->
+          <!-- <button class="icon-button" type="button" id="printPage" title="打印页面">
             <span class="material-symbols-outlined" aria-hidden="true">print</span>
             <span>打印</span>
-          </button>
+          </button> -->
           <div class="language-switcher" role="group" aria-label="选择语言">
             <a class="language-option is-selected" href="teacher_chinese.html" aria-label="切换到中文" aria-current="page">中文</a>
             <a class="language-option" href="teacher_english.html" aria-label="切换到英文">EN</a>
@@ -107,7 +106,6 @@
         <div class="section-kicker">教师速览</div>
         <div class="section-heading">
           <h2>单元速览</h2>
-          <p>把原 DOCX 的密集表格重组为可扫描的教学工作台。</p>
         </div>
 
         <div class="snapshot-grid">
@@ -128,10 +126,6 @@
           <details class="brief-card" open>
             <summary>资源</summary>
             <p>31 个外部资源链接：eSafety 页面、YouTube、Bilibili、Google Drive 电子书与故事书。</p>
-          </details>
-          <details class="brief-card" open>
-            <summary>媒体说明</summary>
-            <p>源 DOCX 未包含内嵌图片文件；本页以视频缩略图、资源卡和后续图片区呈现视觉材料。</p>
           </details>
         </div>
 
@@ -492,7 +486,7 @@
       </div>
     </section>
 
-    <section class="band band--mint" id="visuals">
+    <!-- <section class="band band--mint" id="visuals">
       <div class="section-inner">
         <div class="section-kicker">视觉资源</div>
         <div class="section-heading">
@@ -514,7 +508,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="band band--paper" id="assessment">
       <div class="section-inner">
@@ -549,7 +543,7 @@
       </div>
     </section>
 
-    <section class="band band--paper teacher-only" id="original-docx">
+    <!-- <section class="band band--paper teacher-only" id="original-docx">
       <div class="section-inner">
         <div class="section-kicker">DOCX 来源</div>
         <div class="section-heading">
@@ -558,7 +552,7 @@
         </div>
         <div class="docx-table-stack" id="docxTables"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="band band--paper" id="evaluation">
       <div class="section-inner">
@@ -617,7 +611,7 @@
       <div class="footer-brand">
         <img src="assets/images/scs_logo.jpg" alt="悉尼中文学校校徽">
         <div>
-          <strong>悉尼中文学校</strong>
+          <strong>雪梨中文学校</strong>
           <p>网络安全教学单元</p>
         </div>
       </div>
@@ -625,17 +619,24 @@
         <a href="#overview">单元速览</a>
         <a href="#activities">课堂活动</a>
         <a href="resource_chinese.html">资源库</a>
-        <a href="#original-docx">来源表格</a>
+        <!-- <a href="#original-docx">来源表格</a> -->
         <a href="cs_project_chinese.html">公开页</a>
       </nav>
-      <div class="footer-note">
+      <!-- <div class="footer-note">
         <p>整理自 DOCX 来源：<strong>三至六年级网络安全教学单元.docx</strong></p>
         <p>外部资源仍保留在原平台，课堂使用前请由教师先行审核。</p>
-      </div>
+      </div> -->
     </div>
   </footer>
 
-  <script type="module" src="assets/scripts/teacher.js"></script>
+  <a class="back-to-top" href="#" role="button" aria-label="回到顶部" title="回到顶部">
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+    <span class="sr-only">回到顶部</span>
+  </a>
+
+  <script src="assets/data/docx-tables.js"></script>
+  <script src="assets/scripts/shared.js"></script>
+  <script src="assets/scripts/teacher.js"></script>
 </body>
 </html>
 
